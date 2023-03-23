@@ -1,5 +1,5 @@
 function calculateMinCost() {
-	var inputData=document.querySelector('#rope-lengths').value;
+	var inputData=document.getElementById('rope-lengths').value;
 	var inputArr=inputData.split(',').map(Number);
 	alert(inputArr);
 	
@@ -16,7 +16,7 @@ function calculateMinCost() {
 		inputArr.sort(function(a,b) return{a-b});
 		
 	}
-	document.querySelector('#result').textContent=cost;
+	document.getElementById('result').textContent=cost;
   
   
   
